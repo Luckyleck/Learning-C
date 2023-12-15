@@ -20,6 +20,8 @@ int main()
     %ld - int (long int, signed) 32 bits          
     %lld - int (long long int, signed) 64 bits
     %i - unsigned integer
+    %hu - unsigned integer short
+    %lu - unsighned long
 
     */
     printf("%s World\n", "Hello");
