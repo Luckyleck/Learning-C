@@ -32,7 +32,7 @@ int main()
     double slicesPerPerson = (double) slices / people; // 8.500000
     printf("%lf\n", slicesPerPerson); // %lf is double specifier
 
-    // if variable is double and you want a double value returned add a .0 after the variable in the expression
+// if variable is double and you want a double value returned add a .0 after the variable in the expression
 
     return 0;
 
