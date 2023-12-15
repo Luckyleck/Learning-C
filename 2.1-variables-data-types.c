@@ -17,5 +17,23 @@ int main()
 
     // Do not start variables with numbers
     // Variables are case sensitive
+
+    // Implicit type conversion
+    int zero = .99999999;
+    printf("%d\n", zero);
+
+    // Type casting
+    int slices = 17;
+    int people = 2;
+
+    // if dividing integer by integer you can only get integer back
+    // double slicesPerPerson = slices / people; // This would result in 8, not 8.5
+
+    double slicesPerPerson = (double) slices / people; // 8.500000
+    printf("%lf\n", slicesPerPerson); // %lf is double specifier
+
+    // if variable is double and you want a double value returned add a .0 after the variable in the expression
+
     return 0;
+
 }

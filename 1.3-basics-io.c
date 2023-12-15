@@ -16,6 +16,7 @@ int main()
     %s - strings
     %c - char
     %f - float
+    %lf - double
     %d - int (short int, signed) 16 bits        
     %ld - int (long int, signed) 32 bits          
     %lld - int (long long int, signed) 64 bits
