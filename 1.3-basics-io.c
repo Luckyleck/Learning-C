@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("Hello World\n");
+    printf("Hello World\n"); // Use \n
 
     int x = 50;
     int y;  // declaration
@@ -27,8 +27,22 @@ int main()
     printf("X: %d, Y: %d\n", x, y);
 
     // Use scanf to ask for input
-    scanf()
+    // Use & ampersand before you change value of variable
 
+    printf("Give me a radius: ");
+    int radius;
+    scanf("%d", &radius); //address-of-operator (pointer) needed, except with arrays
+
+    printf("You gave me %d\n", radius); 
+
+    char name[20]; //char array of 20 characters. Must reserve one character for the 'null terminator < \0 > takes one spot
+     
+    // Although we say that name array is 20 characters long, it's actually 19 because of the null terminator
+    // If it's longer than 19 characters it won't capture the entire string
+
+    printf("Give me your name: ");
+    scanf("%19s", name); // notice we don't need address-of-operator for array '&'. Arrays decay into pointers.
+    printf("Your name is %s\n", name);
 
     return 0;
 }
