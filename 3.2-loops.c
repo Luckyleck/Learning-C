@@ -8,7 +8,10 @@ int main()
     }
 
     int ages[] = {12, 43, 545, 3, 4, 18, 87, 25}; // Declare int array with brackets and curly braces
-    for (int i = 0; i < (sizeof(ages) / sizeof(ages[0])); i++) // To get size of array use sizeof(array) / sizeof(firstitem)
+    
+    int size = sizeof(ages) / sizeof(ages[0]);
+
+    for (int i = 0; i < size; i++) // To get size of array use sizeof(array) / sizeof(firstItem)
     {
         printf("ages[i] = %d\n", ages[i]);
     }
